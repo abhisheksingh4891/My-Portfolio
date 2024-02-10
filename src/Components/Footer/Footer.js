@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
 import Axios from "axios";
+const base_url = "https://portfoliobackend-s19e.onrender.com";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -9,7 +10,7 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    Axios.post("http://localhost:5000/feedback", {
+    Axios.post(`${base_url}/feedback`, {
       email: email,
       message: message,
     });
