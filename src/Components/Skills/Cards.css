@@ -1,0 +1,50 @@
+.item {
+    transition: transform 0.6s;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.itemimage {
+    width: 100px;
+    cursor: pointer;
+    height: 100px;
+}
+
+.itemcontent {
+    margin-top: 10px;
+}
+
+.itemname {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .item {
+        /* Adjustments for smaller screens */
+        /* For example: */
+        margin-top: -70px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .itemimage {
+        width: 70px;
+        height: 70px;
+    }
+
+    .itemname {
+        font-size: 18px;
+    }
+    
+}
