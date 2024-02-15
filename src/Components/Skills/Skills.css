@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .content {
@@ -32,9 +32,10 @@
 }
 
 .vertic {
-    margin-top: 70px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
+    /* margin-left: 50%; */
     border: 2px rgb(188, 188, 188) solid;
     height: 60px;
     width: 0px;
@@ -46,9 +47,6 @@
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .skills {
-        margin-top: 40px;
-    }
 
     .content {
         display: grid;
@@ -62,9 +60,5 @@
 
     .paraaa p {
         font-size: 25px; /* Adjusting font size for smaller screens */
-    }
-
-    .vertic {
-        margin-top: 50px; /* Adjusting top margin for smaller screens */
     }
 }

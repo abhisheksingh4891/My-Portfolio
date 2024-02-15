@@ -5,17 +5,19 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div className="skills" id="skills">
-      <div className="paraaa">
-        <p>My Skills</p>
+    <section id="skills1">
+      <div className="skills" id="skills">
+        <div className="paraaa">
+          <p><u>My Skills</u></p>
+        </div>
+        <div className="content">
+          {Content.map((Content) => (
+            <Cards key={Content.id} image={Content.image} name={Content.name} />
+          ))}
+        </div>
+        <div className="vertic"></div>
       </div>
-      <div className="content">
-        {Content.map((Content) => (
-          <Cards key={Content.id} image={Content.image} name={Content.name} />
-        ))}
-      </div>
-      <div className='vertic'></div>
-    </div>
+    </section>
   );
 };
 

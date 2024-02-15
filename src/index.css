@@ -1,6 +1,6 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 /* Tailwind CSS directives */
 @tailwind base;
@@ -9,31 +9,38 @@
 
 /* Base font-family setting */
 @layer base {
-    html {
-        font-family: 'Raleway', sans-serif;
-    }
+  html {
+    font-family: "Raleway", sans-serif;
+  }
 }
 
 /* General styles */
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0; /* Added to ensure consistent padding behavior */
+  box-sizing: border-box; /* Consistent sizing with border and padding */
+}
+section{
+  padding-top: 60px;
+
 }
 
 body {
-    margin: 0;
-    background-color: whitesmoke;
-    display: block;
-    justify-content: center;
-    align-items: center;
+  /* margin: 0; */
+  background-color: whitesmoke;
+  /* display: block; */
+  /* justify-content: center;
+  align-items: center; */
+  /* margin-top: 60px; */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    /* Add your responsive styles here */
-    /* For example: */
-    body {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  /* Adjustments for smaller screens */
+  /* Add your responsive styles here */
+  /* For example: */
+  body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
