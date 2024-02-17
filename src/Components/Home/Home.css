@@ -119,9 +119,11 @@
     justify-content: center;
     margin-left: 50%;
     border: 2px rgb(188, 188, 188) solid;
+    /* border: 1px solid black; */
     height: 60px;
     width: 0px;
     border-radius: 100px;
+
 }
 
 @media screen and (max-width: 768px) {

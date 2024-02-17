@@ -4,9 +4,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    padding-top: -5vh;
 }
-
+/* #contact1{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    margin-top: 10px;
+    background-color:beige;
+    height: 460px;
+} */
 .footer-logo {
     display: flex;
     align-items: center;
@@ -74,6 +82,11 @@
     font-size: 20px;
     font-weight: 600;
 }
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .footer-copyright hr {
     width: 80%;
@@ -86,6 +99,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin-top: 30px;
 }
@@ -112,7 +126,10 @@
     font-size: 18px;
     border-radius: 10px;
 }
-
+.btttn{
+    display: flex;
+    align-items: center;
+}
 .btn {
     width: 100px;
     height: 40px;
@@ -154,9 +171,6 @@
 
     .btn {
         width: 120px;
-    }
-    .btttn{
-        margin-left: 45px;
     }
     .footer-copyright p{
         font-size: 15px;

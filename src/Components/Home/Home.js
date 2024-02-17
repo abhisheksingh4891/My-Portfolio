@@ -4,6 +4,7 @@ import image from "./images/image.jpg";
 
 const Home = () => {
   return (
+    <>
     <section id="home1" className="home">
       <div className="blur-overlay"></div> {/* Add the blur overlay */}
       <div className="logo">
@@ -34,8 +35,9 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="verticalv"></div>
     </section>
+      <div className="verticalv"></div>
+      </>
   );
 };
 
