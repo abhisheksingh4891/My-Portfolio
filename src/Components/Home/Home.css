@@ -10,6 +10,7 @@
     height: auto;
     position: relative;
     animation: fadeIn 1s ease; /* Add fade-in animation */
+    /* margin-top: 10px; */
 }
 
 @keyframes fadeIn {
@@ -33,7 +34,7 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 50px;
     gap: 20px;
     z-index: 1;
     animation: scaleIn 1s ease forwards;
@@ -73,7 +74,9 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin: 20px 5%;
+    /* margin: 30px 5%; */
+    margin-top: 0px;
+    margin-bottom: 40px;
     z-index: 1; /* Ensure content appears above the blur overlay */
 }
 
