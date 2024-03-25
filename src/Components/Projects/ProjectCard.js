@@ -18,10 +18,17 @@ const ProjectCard = (props) => {
             <li>{props.p1}</li>
           </ol>
         </div>
-        <div className="btn">
-          <a href={props.git}>
-            <button>GitHub</button>
-          </a>
+        <div style={{display:'flex'}}>
+          <div className="btn">
+            <a href={props.git}>
+              <button>GitHub</button>
+            </a>
+          </div>
+          {/* <div className="btn">
+            <a href="./">
+              <button>Project</button>
+            </a>
+          </div> */}
         </div>
       </div>
       <div key={props.id} className="itemm">

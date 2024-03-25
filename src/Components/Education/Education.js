@@ -17,12 +17,12 @@ const Education = () => {
               </li>
               <li>Chandigarh University</li>
               <li>Graduation in 2024</li>
-              <li>CGPA 8.02/10</li>
+              <li>CGPA 7.98/10</li>
             </ul>
             <ol className="circle">
               <li typeof="bullet">Major in Computer Science</li>
               <li>Major in Software Development</li>
-              <li>Major in Frontend Development</li>
+              <li>Major in FullStack Development</li>
               {/* <li></li> */}
             </ol>
           </div>
