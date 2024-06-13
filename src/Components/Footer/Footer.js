@@ -7,10 +7,10 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    await Axios.post(`${base_url}/feedback`, {
+    Axios.post(`${base_url}/feedback`, {
       email: email,
       message: message,
     });
