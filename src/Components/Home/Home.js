@@ -12,10 +12,12 @@ const Home = () => {
         </div>
         <div className="parag">
           <p>
-            Hello, I'm Abhishek Singh. I'm a last year undergraduate student
-            pursuing my bachelors in computer science at Chandigarh University.
-            I spend my day working on web apps with Html, JavaScript, React.js
-            and Tailwind CSS.
+            Hello, I'm Abhishek Singh. I have graduated with a Bachelor's degree
+            in Computer Science from Chandigarh University. Currently, I am
+            working as a Full Stack Developer specializing in the MERN stack. I spend my days developing and
+            optimizing web applications using HTML, JavaScript, React.js, and
+            Bootstrap. My passion lies in creating seamless and efficient user
+            experiences through innovative web solutions.
           </p>
         </div>
         <div className="all">
