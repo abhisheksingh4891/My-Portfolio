@@ -27,7 +27,7 @@ const Home = () => {
             </a>
           </div>
           <div className="bttn">
-            <a href="https://www.linkedin.com/in/abhishek-singh-7a39a5219">
+            <a href="https://www.linkedin.com/in/abhisheksinghsoftwaredeveloper">
               <button>LinkedIn</button>
             </a>
           </div>
