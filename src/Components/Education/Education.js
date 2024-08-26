@@ -17,7 +17,7 @@ const Education = () => {
               </li>
               <li>Chandigarh University</li>
               <li>Graduated in 2024</li>
-              // <li>CGPA 7.98/10</li>
+              {/* <li>CGPA 7.98/10</li> */}
             </ul>
             <ol className="circle">
               <li typeof="bullet">Major in Computer Science</li>
