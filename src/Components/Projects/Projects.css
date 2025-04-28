@@ -4,52 +4,134 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 10px;   
-}
-
-.conten {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-}
-
-.par {
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .par {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.par p {
-    color: black;
+  }
+  
+  .par p {
+    color: #333;
     font-size: 35px;
     font-weight: 700;
-}
-
-.verti {
-    margin-top: 90px;
+    text-align: center;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .conten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Ensure there is space between the cards */
+    margin-top: 30px;
+    align-items: flex-start; /* Align cards at the start vertically */
+  }
+  
+  /* Ensure vertical gap between cards */
+  .projectcard {
+    background: rgba(197, 191, 191, 0.355);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 1000px;
+    border-radius: 10px;
+    gap: 20px;
+    margin-top: 20px; /* Add a gap between each card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .projectcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itemconten {
+    padding: 15px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  
+  .nam {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .tech {
+    margin-top: 4px;
+  }
+  
+  .itemconten ol {
+    margin-top: 9px;
+    margin-left: 31px;
+  }
+  
+  .itemm {
+    border-radius: 20px;
+  }
+  
+  .itemimag {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .bn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .btn-container {
     display: flex;
     justify-content: center;
-    /* margin-left: 50%; */
-    border: 2px rgb(188, 188, 188) solid;
-    height: 60px;
-    width: 0px;
-    border-radius: 100px;
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .project {
-        flex-direction: column;
-        gap: 20px;
-        /* margin-top: 160px; */
+  }
+  
+  .btn {
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .projectcard {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      gap: 15px;
+      margin-top: 20px; /* Add vertical space for mobile */
     }
-
-    .par p {
-        color: black;
-        font-size: 25px;
-        font-weight: 700;
+  
+    .itemconten {
+      margin-left: 0;
+      margin-top: 15px;
     }
-}
+  
+    .itemimag {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+  
+    .btn {
+      margin: 10px auto;
+    }
+  
+    .nam {
+      font-size: 20px;
+    }
+  }
+  

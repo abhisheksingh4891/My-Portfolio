@@ -8,13 +8,12 @@ const ExpData = [
   },
   {
     id: 2,
-     role: "Full Stack Developer",
+    role: "Full Stack Developer",
     company: "Metaponder Solutions",
     date: "Jan 2024 - Present",
-    p1: `As a Full Stack Developer, I specialize in building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with Next.js and TypeScript. At Metaponder Solutions Pvt Ltd, I have developed and maintained CRM systems, admin panels, and dynamic web templates, focusing on both frontend and backend development. My expertise extends to state management using Context API and Redux, secure API development, and efficient database management with MySQL, PostgreSQL, and MongoDB.
-I have a strong foundation in problem-solving, validated through achievements in coding contests like AtCoder and GeeksforGeeks. I am passionate about delivering high-quality software solutions, collaborating in cross-functional teams, and continuously enhancing my technical and leadership skills.`,
-
-     },
+    p1: `As a Full Stack Developer, I specialize in building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with Next.js and TypeScript. At Metaponder Solutions Pvt Ltd, I have developed and maintained CRM systems, admin panels, and dynamic web templates, focusing on both frontend and backend development. My expertise extends to state management using Context API and Redux, secure API development, and efficient database management with MySQL, PostgreSQL, and MongoDB.`,
+    p2: `I have a strong foundation in problem-solving, validated through achievements in coding contests like AtCoder and GeeksforGeeks. I am passionate about delivering high-quality software solutions, collaborating in cross-functional teams, and continuously enhancing my technical and leadership skills.`,
+  },
   // {
   //   id: 2,
   //    role: "Mern Stack Developer Intern",

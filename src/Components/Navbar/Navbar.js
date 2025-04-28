@@ -1,84 +1,81 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("home");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      // Define the positions of each section ID
-      const homeSection = document.getElementById("home1").offsetTop;
-      const projectSection = document.getElementById("projects1").offsetTop;
-      const skillsSection = document.getElementById("skills1").offsetTop;
-      const expSection = document.getElementById("exp1").offsetTop;
-      const eduSection = document.getElementById("edu1").offsetTop;
-      const contactSection = document.getElementById("contact1").offsetTop;
-
-      // Determine which section is in the view
-      if (scrollPosition >= homeSection && scrollPosition < projectSection) {
-        setActiveMenu("home");
-      } else if (
-        scrollPosition >= projectSection &&
-        scrollPosition < skillsSection
-      ) {
-        setActiveMenu("project");
-      } else if (
-        scrollPosition >= skillsSection &&
-        scrollPosition < expSection
-      ) {
-        setActiveMenu("skills");
-      } else if (scrollPosition >= expSection && scrollPosition < eduSection) {
-        setActiveMenu("exp");
-      } else if (
-        scrollPosition >= eduSection &&
-        scrollPosition < contactSection
-      ) {
-        setActiveMenu("edu");
-      } else if (scrollPosition >= contactSection) {
-        setActiveMenu("contact");
-      }
-    };
-
-    // Add event listener for scrolling
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div className="navbar">
       <div className="nav-logo">
         <p>Abhishek Singh</p>
       </div>
-      <ul className="nav-menu">
-        <li onClick={() => setActiveMenu("home")}>
+      <ul className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
+        <li
+          onClick={() => setActiveMenu("home")}
+          className={activeMenu === "home" ? "active" : ""}
+        >
           <AnchorLink href="#home1">Home</AnchorLink>
-          {activeMenu === "home" ? <theme /> : <></>}
         </li>
-        <li onClick={() => setActiveMenu("project")}>
+        <li
+          onClick={() => setActiveMenu("project")}
+          className={activeMenu === "project" ? "active" : ""}
+        >
           <AnchorLink href="#projects1">Projects</AnchorLink>
-          {activeMenu === "project" ? <theme /> : ""}
         </li>
-        <li onClick={() => setActiveMenu("skills")}>
+        <li
+          onClick={() => setActiveMenu("skills")}
+          className={activeMenu === "skills" ? "active" : ""}
+        >
           <AnchorLink href="#skills1">Skills</AnchorLink>
-          {activeMenu === "skills" ? <theme /> : ""}
         </li>
-        <li onClick={() => setActiveMenu("exp")}>
+        <li
+          onClick={() => setActiveMenu("exp")}
+          className={activeMenu === "exp" ? "active" : ""}
+        >
           <AnchorLink href="#exp1">Experience</AnchorLink>
-          {activeMenu === "exp" ? <theme /> : ""}
         </li>
-        <li onClick={() => setActiveMenu("edu")}>
+        <li
+          onClick={() => setActiveMenu("edu")}
+          className={activeMenu === "edu" ? "active" : ""}
+        >
           <AnchorLink href="#edu1">Education</AnchorLink>
-          {activeMenu === "edu" ? <theme /> : ""}
         </li>
-        <li onClick={() => setActiveMenu("contact")}>
+        <li
+          onClick={() => setActiveMenu("contact")}
+          className={activeMenu === "contact" ? "active" : ""}
+        >
           <AnchorLink href="#contact1">Contact</AnchorLink>
-          {activeMenu === "contact" ? <theme /> : ""}
+        </li>
+      </ul>
+      {/* <div className="nav-toggle" onClick={toggleMobileMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> */}
+      <ul className={`nav-menu-mobile ${isMobileMenuOpen ? "active" : ""}`}>
+        <li>
+          <AnchorLink href="#home1">Home</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#projects1">Projects</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#skills1">Skills</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#exp1">Experience</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#edu1">Education</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#contact1">Contact</AnchorLink>
         </li>
       </ul>
     </div>
