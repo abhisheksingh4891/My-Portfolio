@@ -36,7 +36,7 @@ const Footer = () => {
           or through this form.
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="form">
+          <div className="form text-center">
             <input
               type="email"
               className="email"
@@ -52,7 +52,7 @@ const Footer = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <div className="btttn">
+          <div className="text-center">
             <button className="btn" type="submit">
               Submit
             </button>

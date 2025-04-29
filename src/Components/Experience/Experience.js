@@ -23,7 +23,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
-      <div className="vertica111111 ms-3"></div>
+      {/* <div className="vertica111111 ms-3"></div> */}
     </section>
   );
 };

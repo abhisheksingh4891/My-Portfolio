@@ -15,7 +15,7 @@ const Skills = () => {
             <Cards key={Content.id} image={Content.image} name={Content.name} />
           ))}
         </div>
-        <div className="vertic"></div>
+        {/* <div className="vertic"></div> */}
       </div>
     </section>
   );

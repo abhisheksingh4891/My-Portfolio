@@ -25,8 +25,8 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="verti"></div>
       </div>
+        {/* <div className="verti"></div> */}
     </section>
   );
 };

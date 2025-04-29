@@ -26,7 +26,7 @@ const Education = () => {
             </ol>
           </div>
         </div>
-        <div className="vertica"></div>
+        {/* <div className="vertica"></div> */}
       </div>
     </section>
   );

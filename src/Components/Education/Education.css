@@ -16,7 +16,7 @@
 }
 
 .paraa p {
-  color: #333;
+  /* color: #333; */
   font-size: 35px;
   font-weight: 700;
   text-align: center;
@@ -24,7 +24,8 @@
 }
 
 .boxii {
-  background: rgba(197, 191, 191, 0.355);
+  background: rgba(241, 238, 238, 0.842);
+  color: black;
   display: flex;
   height: 300px;
   width: 700px;

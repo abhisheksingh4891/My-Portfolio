@@ -17,7 +17,7 @@
   }
   
   .par p {
-    color: #333;
+    /* color: #333; */
     font-size: 35px;
     font-weight: 700;
     text-align: center;
@@ -104,6 +104,18 @@
   .btn:hover {
     transform: scale(1.1);
   }
+
+  
+.verti {
+  margin-top: 70px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 2px rgb(188, 188, 188) solid !important;
+  height: 60px !important;
+  width: 0px !important;
+  border-radius: 100px !important;
+}
   
   /* Media query for smaller screens */
   @media screen and (max-width: 768px) {
