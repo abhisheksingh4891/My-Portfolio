@@ -1,26 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Experience.css";
 import ExpCard from "./ExpCard";
 import ExpData from "./ExpData";
 
 const Experience = () => {
-  const expRef = useRef(null);
-
-  // useEffect(() => {
-  //   if (experienceRef.current) {
-  //     const handleScroll = () => {
-  //       const top = experienceRef.current.offsetTop;
-  //       console.log("Experience section top position:", top);
-  //       // Your logic here
-  //     };
-
-  //     window.addEventListener("scroll", handleScroll);
-
-  //     // Cleanup
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   }
-  // }, []);
-
   return (
     <section id="exp1">
       <div className="exp" id="experience" >

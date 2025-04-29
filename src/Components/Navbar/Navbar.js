@@ -4,18 +4,20 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("home");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
   return (
     <div className="navbar">
       <div className="nav-logo">
         <p>Abhishek Singh</p>
       </div>
-      <ul className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
+      <ul
+        className={`nav-menu`}
+      >
         <li
           onClick={() => setActiveMenu("home")}
           className={activeMenu === "home" ? "active" : ""}
@@ -58,7 +60,7 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div> */}
-      <ul className={`nav-menu-mobile ${isMobileMenuOpen ? "active" : ""}`}>
+      <ul className={`nav-menu-mobile `}>
         <li>
           <AnchorLink href="#home1">Home</AnchorLink>
         </li>
